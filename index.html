@@ -1,47 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashmitha P | Portfolio</title>
+
 <style>
+
 body{
-font-family: Arial;
-text-align:center;
-background:#f4f4f4;
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg,#141e30,#243b55);
+color:white;
+scroll-behavior:smooth;
 }
+
+nav{
+position:sticky;
+top:0;
+background:#00000090;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+header{
+padding:80px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
 section{
-background:white;
-margin:20px;
-padding:20px;
+width:85%;
+margin:40px auto;
+background:rgba(255,255,255,0.08);
+padding:30px;
+border-radius:15px;
+backdrop-filter:blur(8px);
+}
+
+h2{
+color:#00e5ff;
+}
+
+.skills span{
+display:inline-block;
+background:#00c6ff;
+margin:8px;
+padding:8px 15px;
+border-radius:20px;
+}
+
+.project{
+background:#ffffff15;
+margin:15px;
+padding:15px;
 border-radius:10px;
 }
+
+button{
+padding:12px 20px;
+background:#00c6ff;
+border:none;
+border-radius:8px;
+color:white;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#0072ff;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#00000080;
+}
+
 </style>
 </head>
 
 <body>
 
-<h1>Hi, I'm Ashmitha 👋</h1>
-<p>Computer Science Student</p>
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#ai">AI Section</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<section>
+<header>
+<h1>Hi, I'm Ashmitha P 👩‍💻</h1>
+<p>Computer Science Engineering Student | Future Software Developer</p>
+<a href="resume.pdf" download>
+<button>Download Resume</button>
+</a>
+</header>
+
+<section id="about">
 <h2>About Me</h2>
-<p>I am passionate about software development and learning cloud computing.</p>
+<p>
+Motivated Computer Science Engineering student passionate about software development,
+UI/UX design, cloud technologies, and innovative problem solving.
+I aim to learn continuously while contributing creative ideas to organizational success.
+</p>
 </section>
 
-<section>
-<h2>Skills</h2>
-<p>Java | HTML | CSS | Cloud Computing | DSA</p>
+<section id="education">
+<h2>Education</h2>
+<p><b>B.E – Computer Science and Engineering</b><br>
+Jai Shriram Engineering College (2027) – 81.5%</p>
+
+<p><b>HSC</b> – St. Joseph Matric Higher Secondary School (2022) – 70%</p>
+
+<p><b>SSLC</b> – St. Joseph Matric Higher Secondary School (2020)</p>
 </section>
 
-<section>
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills">
+<span>C</span>
+<span>Java</span>
+<span>HTML</span>
+<span>CSS</span>
+<span>UI/UX Design</span>
+<span>Figma</span>
+<span>MERN Stack</span>
+<span>IoT</span>
+</div>
+</section>
+
+<section id="projects">
 <h2>Projects</h2>
-<p>Library Management System</p>
-<p>Cloud Security Mini Project</p>
+
+<div class="project">
+<h3>Language IQ App</h3>
+<p>Application designed to improve language learning skills interactively.</p>
+</div>
+
+<div class="project">
+<h3>Maze Solving Problem</h3>
+<p>Algorithm-based puzzle solving system.</p>
+</div>
+
+<div class="project">
+<h3>Code Quiz App</h3>
+<p>Game-based platform to learn programming languages.</p>
+</div>
+
+<div class="project">
+<h3>Blaze Buster (IoT)</h3>
+<p>Fire prediction system sending SMS alerts and emergency calls.</p>
+</div>
+
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>Email: yourmail@gmail.com</p>
+<section id="ai">
+<h2>AI Corner 🤖</h2>
+<p>
+Exploring Artificial Intelligence concepts including smart automation,
+problem-solving systems, and intelligent applications.
+Currently learning how AI integrates with cloud and software systems.
+</p>
+
+<button onclick="aiMessage()">Ask My AI Assistant</button>
+<p id="aiOutput"></p>
 </section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>📧 ashmiashmitha773@gmail.com</p>
+<p>📱 99528 40250</p>
+<p>🔗 linkedin.com/in/ashmitha-p</p>
+</section>
+
+<footer>
+<p>© 2026 Ashmitha P | Portfolio</p>
+</footer>
+
+<script>
+function aiMessage(){
+document.getElementById("aiOutput").innerHTML =
+"Hello! Thanks for visiting Ashmitha's portfolio 🚀";
+}
+</script>
 
 </body>
 </html>
